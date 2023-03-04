@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            max-width: 500px;
+            min-height: 244px;
+            border: 1px solid #ccc;
+            background: #ffffcc;
+        }
+        .form_control,
+        .form_option
+        {
+            outline: none;
+            border: 1px solid #7f9db9;
+        }
+        .footer_button-modify{
+            border: 1px solid #7f9db9;
+            border-radius: 3px;
+        }
+        .footer_button-modify:hover{
+            cursor: pointer;
+            opacity: 0.8;
+        }
+        /*-----> Header */
+        .header{
+            width: 100%;
+            height: 130px;
+        }
+        .header_left{
+            width: 50%;
+            float: left;
+        }
+        .header_right{
+            width: 50%;
+            float: right;
+        }
+        .form_name_border,
+        .form_email_border,
+        .form_department_border {
+            border: 1px solid #aca899;
+            width: 235px;
+            height: 34px;
+            margin-top: 4px;
+            margin-left: 4px;
+
+        }
+        
+        .form_name{
+            margin-top: 6px;
+            margin-left: 4px;
+        }
+        .form_email{
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .form_department{
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .header_comment{
+            border: 1px solid #aca899;
+            margin-top: 4px;
+            margin-right: 4px;
+            height: 113px;
+        }
+        .comment{
+            margin-left:4px ;
+        }
+          /*-----> Body */
+          .Body{
+            border: 1px solid #aca899;
+            margin-left: 4px ;
+            margin-right: 4px ;
+
+          }
+          .Gender{
+            display: flex;
+            margin-top: -10px;
+            margin-left: 10px;
+          }
+          .gender_input{
+            margin-top: 15px;
+          }
+          .check{
+            
+            display: flex;
+            margin-top: -10px;
+          }
+          .body_radio_check{
+            display: flex;
+          }
+          .check_input{
+            margin-top: 16px;
+          }
+        /*-----> Footer */
+          .footer{
+              display: flex;
+              border: 1px solid #aca899;
+              margin: 4px;
+              height: 35px;
+        }
+        .footer_button{
+            margin: auto;
+          }
+    </style>
+</head>
+<body>
+    <div class="form">
+       <div class="header">
+        <div class="header_left">
+            <form action="">
+                <div class="form_name_border">
+                    <div class="form_name">
+                        Name: <input class="form_control" type="text" size="18"><br>
+                    </div>
+                </div>
+                <div class="form_email_border">
+                    <div class="form_name">
+                        Email: <input class="form_control" type="text" size="18"><br>
+                    </div>
+                </div>
+                <div class="form_department_border">
+                    <div class="form_department">
+                        Department:
+                        <select class="form_option" name="mydropdown" >
+                             <option  value="">[SelectAny Value ]</option>
+                        </select>
+                    </div>
+                </div>
+            </form>  
+        </div>
+        <div class="header_right">
+           <div class="header_comment">
+            <form action="">
+               <div class="comment">
+                Comments:<br>
+                <input class="form_control" type="text" name="" id="" size="28" style="height: 85px;">
+               </div>
+            </form>
+           </div>
+        </div>
+
+       </div>
+
+       <div class="Body">
+        <form name="myform" action="" method="POST">
+            
+           <div class="body_radio_check">
+                <div class="Gender">
+                    <p>Gender</p>
+                    <div class="gender_input">
+                        <input type="radio" name="group1" checked >Male<br>
+                        <input type="radio" name="group1" >Female<br>
+                </div>
+                </div>
+                <div class="check">
+                        <p>Favourite Subject</p>
+                        <div class="check_input">
+                            <input type="checkbox" name="option1" value="Milk">F3026<br>
+                            <input type="checkbox" name="option2" value="Butter"checked>F3038<br>
+                            <input type="checkbox" name="option3" value="Cheese">F4106<br>
+                        </div>
+                </div>
+           </div>
+        </form>
+       </div>
+
+       <div class="footer">
+            <div class="footer_button">
+                <button class="footer_button-modify">Send Information</button>
+                <button class="footer_button-modify">Clear All</button>
+            </div>
+       </div>
+    </div>
+</body>
+</html>
